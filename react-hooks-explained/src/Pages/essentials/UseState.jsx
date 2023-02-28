@@ -14,7 +14,7 @@ export const UseState = () => {
 
   return (
     <div>
-      <h1>UseState</h1>
+      <h2>UseState</h2>
       <button onClick={minus}>-</button>
       <span>{number}</span>
       <button onClick={plus}>+</button>

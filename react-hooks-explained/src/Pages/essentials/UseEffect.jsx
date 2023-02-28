@@ -12,7 +12,7 @@ export const UseEffect = () => {
 
   return (
     <div>
-      <h1>UseEffect</h1>
+      <h2>UseEffect</h2>
       <button onClick={() => setSelectedResource("posts")}>posts</button>
       <button onClick={() => setSelectedResource("users")}>users</button>
       <button onClick={() => setSelectedResource("comments")}>comments</button>

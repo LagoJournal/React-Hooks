@@ -4,6 +4,7 @@ import {
   useTheme,
   useThemeUpdate,
 } from "./Pages/essentials/index";
+import { UseRef } from "./Pages/lessUsed/UseRef";
 
 function App() {
   const darkTheme = useTheme();
@@ -15,9 +16,16 @@ function App() {
 
   return (
     <div style={styles}>
-      <button onClick={toggleTheme}>Toggle Theme</button>
+      <h1>Essentials</h1>
+
       <UseState />
       <UseEffect />
+      <h2>UseContext</h2>
+      <button onClick={toggleTheme}>Toggle Theme</button>
+      <br />
+      <br />
+      <h1>Less Used</h1>
+      <UseRef />
     </div>
   );
 }
