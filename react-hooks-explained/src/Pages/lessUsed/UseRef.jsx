@@ -4,10 +4,11 @@ export const UseRef = () => {
   const [text, setText] = useState("");
   const renderCount = useRef(0);
   const inputRef = useRef();
+  const prevText = useRef();
 
   useEffect(() => {
-    renderCount.current = renderCount.current + 1;
-  });
+    prevText.current = text;
+  }, [text]);
 
   const focus = () => {
     inputRef.current.focus();
@@ -21,8 +22,9 @@ export const UseRef = () => {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <div>Your text: {text}</div>
-      <div>That text rendered {renderCount.current} times</div>
+      <div>
+        Your text: {text}, which used to be: {prevText.current}
+      </div>
       <button onClick={focus}>Focus that input!</button>
     </div>
   );
