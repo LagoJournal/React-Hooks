@@ -4,6 +4,7 @@ import {
   useTheme,
   useThemeUpdate,
 } from "./Pages/essentials/index";
+import { UseMemo } from "./Pages/lessUsed/UseMemo";
 import { UseRef } from "./Pages/lessUsed/UseRef";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <br />
       <h1>Less Used</h1>
       <UseRef />
+      <UseMemo />
     </div>
   );
 }
