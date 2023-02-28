@@ -3,9 +3,10 @@ import {
   UseEffect,
   useTheme,
   useThemeUpdate,
-} from "./Pages/essentials/index";
-import { UseMemo } from "./Pages/lessUsed/UseMemo";
-import { UseRef } from "./Pages/lessUsed/UseRef";
+} from "./Hooks/essentials/index";
+import { UseCallback } from "./Hooks/lessUsed/UseCallback";
+import { UseMemo } from "./Hooks/lessUsed/UseMemo";
+import { UseRef } from "./Hooks/lessUsed/UseRef";
 
 function App() {
   const darkTheme = useTheme();
@@ -28,6 +29,7 @@ function App() {
       <h1>Less Used</h1>
       <UseRef />
       <UseMemo />
+      <UseCallback />
     </div>
   );
 }
