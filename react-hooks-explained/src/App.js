@@ -7,6 +7,7 @@ import {
 import { UseCallback } from "./Hooks/lessUsed/UseCallback";
 import { UseMemo } from "./Hooks/lessUsed/UseMemo";
 import { UseRef } from "./Hooks/lessUsed/UseRef";
+import { UseTransition } from "./Hooks/lessUsed/UseTransition";
 
 function App() {
   const darkTheme = useTheme();
@@ -30,6 +31,7 @@ function App() {
       <UseRef />
       <UseMemo />
       <UseCallback />
+      <UseTransition />
     </div>
   );
 }
