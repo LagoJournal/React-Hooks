@@ -4,10 +4,13 @@ import {
   useTheme,
   useThemeUpdate,
 } from "./Hooks/essentials/index";
-import { UseCallback } from "./Hooks/lessUsed/UseCallback";
-import { UseMemo } from "./Hooks/lessUsed/UseMemo";
-import { UseRef } from "./Hooks/lessUsed/UseRef";
-import { UseTransition } from "./Hooks/lessUsed/UseTransition";
+import {
+  UseCallback,
+  UseDeferedValue,
+  UseMemo,
+  UseRef,
+  UseTransition,
+} from "./Hooks/lessUsed/index";
 
 function App() {
   const darkTheme = useTheme();
@@ -32,6 +35,7 @@ function App() {
       <UseMemo />
       <UseCallback />
       <UseTransition />
+      <UseDeferedValue />
     </div>
   );
 }
